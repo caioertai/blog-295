@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= cl_image_tag @article.photo.url(:thumbnail), alt: @article.title %>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
